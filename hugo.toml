@@ -1,0 +1,28 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = "Stanley Chin"
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Notes'
+pageRef = '/notes'
+weight = 20
+
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 30
+
+[[menus.main]]
+name = 'My Work'
+pageRef = '/my-work'
+weight = 40
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
