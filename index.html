@@ -12,7 +12,7 @@
     --bg: #12242B;
     --text: #EFE9DC;
     --muted: #A9B7B4;
-    --accent: #D9A441;
+    --accent: #FFD400;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,6 +48,28 @@
     letter-spacing: -0.01em;
   }
 
+  .links {
+    margin-top: 2.25rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+  }
+
+  .links a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .links a:hover,
+  .links a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
   .cursor {
     display: inline-block;
     width: 0.55em;
@@ -72,6 +94,10 @@
   <div class="hero">
     <h1>Hey, I&rsquo;m Stanley.</h1>
     <p>I&rsquo;m working on engineering at Zapier.<span class="cursor" aria-hidden="true"></span></p>
+    <div class="links">
+      <a href="https://github.com/standielpls" target="_blank" rel="noopener">view source</a>
+      <a href="https://linkedin.com/in/chinstanley" target="_blank" rel="noopener">linkedin</a>
+    </div>
   </div>
 </body>
 </html>
